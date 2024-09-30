@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navigation Tool</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    #map {
+      height: 80vh;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <h1>Navigation Tool</h1>
+  <p>Enter three starting locations and the destination. The tool will calculate the fastest route.</p>
+  
+  <input type="text" id="start1" placeholder="Starting Location 1">
+  <input type="text" id="start2" placeholder="Starting Location 2">
+  <input type="text" id="start3" placeholder="Starting Location 3">
+  <input type="text" id="destination" placeholder="Destination">
+  
+  <button onclick="findFastestRoute()">Find Fastest Route</button>
+  
+  <div id="map"></div>
+
+  <!-- Google Maps API (Replace with your actual API key) -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+  <script src="app.js"></script>
+</body>
+</html>
